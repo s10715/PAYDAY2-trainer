@@ -1,0 +1,52 @@
+{
+	"name": "Mission Helper",
+	"description": "Helper of some misson's quest, like The Diamond, First World Bank, Big Oil.",
+	"author": "",
+	"hooks": [
+		{ "hook_id": "lib/managers/objectinteractionmanager", "script_path": "lib/Overdrill_Cube_Helper.lua" },
+		{"hook_id" : "core/lib/managers/coreworldinstancemanager","script_path" : "lib/The_Diamond_Puzzle_Guide.lua"},
+		{ "hook_id" : "lib/managers/missionmanager","script_path" : "lib/The_Diamond_Puzzle_Guide.lua"},
+		{"hook_id" : "lib/units/props/digitalgui","script_path" : "lib/The_Diamond_Puzzle_Guide.lua"}
+		{"hook_id" : "lib/managers/custom_safehouse/unoachievementchallenge","script_path" : "lib/Secret_Painting_Activator.lua"}
+		{"hook_id": "lib/managers/dialogmanager","script_path": "lib/Auto_Cook.lua"},
+		{"hook_id": "lib/managers/objectinteractionmanager","script_path": "lib/Auto_Cook.lua"}
+	],
+	"keybinds": [
+		{
+			"keybind_id": "overdrill_activator",
+			"name": "Overdrill Activator",
+			"description": "Activates Overdrill even if you are not the host.",
+			"script_path": "lib/Spawn_Mission_Elements.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+		{
+			"keybind_id": "bigoil_engine_helper",
+			"name": "Bigoil Engine Helper",
+			"description": "Print the correct engine number in chat.",
+			"script_path": "lib/Bigoil_Engine_Helper.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+		{
+			"keybind_id": "secret_painting_activator",
+			"name": "Secret Painting Activator",
+			"description": "Activate secret painting in white house heist.",
+			"script_path": "lib/Secret_Painting_Activator.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+		{
+			"keybind_id": "toggle_auto_cook",
+			"name": "Auto Cook Toggle",
+			"description": "Auto cook. In Bomb: Dockyard and Hotline Miami, this will add next chemical by order, so don't shuffle the order.",
+			"script_path": "lib/Auto_Cook.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+	]
+}
